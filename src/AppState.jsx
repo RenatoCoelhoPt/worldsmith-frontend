@@ -1,5 +1,5 @@
-import React from 'react'
-import { useReducer } from 'react/cjs/react.production.min'
+import { useContext, useReducer } from "react/cjs/react.development";
+import React from "react";
 
 const initialState = {
     url: "http://worldsmith-api.herokuapp.com"
@@ -21,7 +21,5 @@ export const AppState = (props) => {
 };
 
 export const useAppState = () => {
-    return React.useContext(AppContext)
+    return useContext(AppContext)
 };
-
-export
